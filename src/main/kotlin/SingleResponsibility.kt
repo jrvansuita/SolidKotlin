@@ -1,7 +1,3 @@
-package s
-
-import kotlin.random.Random
-
 /**
  * Single-Responsibility Principle
  * A class should have only one reason to exists and responsible for one thing.
