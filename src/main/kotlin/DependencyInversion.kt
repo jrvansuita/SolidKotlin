@@ -25,5 +25,4 @@ class DependencyInversion {
             println("Sending formatted message: $formattedMessage")
         }
     }
-
 }

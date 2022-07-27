@@ -13,7 +13,7 @@ class LiskovSubstitution {
     }
 
     /* ❌ Violation Example  */
-    //Dog and Duck are animals, but Dog can't fly! You shouldn't break fly implementation this way.
+    //Dog and Goose are animals, but Dog can't fly! Will break fly implementation.
 
     class Dog : Animal {
         override fun walk() = println("The dog is walking")
@@ -25,9 +25,8 @@ class LiskovSubstitution {
         override fun fly() = println("The goose is flying")
     }
 
-
     /* ✅ Correct Example */
-    //Cat is not a fowl, so it doesn't fly. This way you do not break fly implementation.
+    //Cat is not a fowl, so it doesn't fly. Won't break fly implementation.
 
     interface Animals {
         fun walk()
@@ -45,5 +44,4 @@ class LiskovSubstitution {
         override fun walk() = println("The duck is walking")
         override fun fly() = println("The duck is flying")
     }
-
 }
